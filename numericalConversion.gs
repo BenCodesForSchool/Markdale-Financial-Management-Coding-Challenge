@@ -1,7 +1,4 @@
-//I would simply add this code to the autoFillIPSTemplateGoogleDoc(e) function in code.gs
-//I wasn't sure about some specific information, and have e-mailed James about it. 
-//If I finish this before he gets back to me, I'll submit this; and amend it later if he tells me something I haven't already figured out.
-
+//I would simply add this code to the autoFillIPSTemplateGoogleDoc(e) function in code.gs at line 23
 //I would create a hash map like this: 
 
 numConvertMap = new Map();
@@ -12,8 +9,8 @@ numConvertMap.set("Moderately risk-averse", 3);
 numConvertMap.set("Not very risk-averse", 4);
 numConvertMap.set("Not risk-averse", 5);
 
-/*That only works for one of the three columns, but I would simply add the expected answers from the other columns to the hash map, as well. 
-Then I would, create three variables that would hold the numerical values. For instance, if columns 5, 6, and 7 were meant to be converted 
+/*That likely only works for one column, but I would simply add the expected answers from the other columns to the hash map, as well. 
+Then I would, create three variables that would hold the numerical values for each column. For instance, if columns 5, 6, and 7 were meant to be converted 
 From text to a number:*/
 let column5 = e.values[6]; // Following the convention seen in the autoFillIPSTemplateGoogleDoc function, where values from column 3 were found in e.values[4]
 let numericalRepresentationOfColumn5 = numConvertMap.get(column5);
