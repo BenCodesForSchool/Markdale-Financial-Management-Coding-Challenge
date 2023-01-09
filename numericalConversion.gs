@@ -2,7 +2,7 @@
 //I wasn't sure about some specific information, and have e-mailed James about it. 
 //If I finish this before he gets back to me, I'll submit this; and amend it later if he tells me something I haven't already figured out.
 
-//OPTION 1: I would create a hash map like this: 
+//I would create a hash map like this: 
 
 numConvertMap = new Map();
 //Then I would assign all expected values a number; so for instance:
