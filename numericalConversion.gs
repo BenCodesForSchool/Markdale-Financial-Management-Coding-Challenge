@@ -33,3 +33,4 @@ let column5int = parseInt(column5);
 //OR
 //If we expect a float value:
 let column5float = parseFloat(column5);
+//I would just repeat the above process with columns 6 and 7
